@@ -1,0 +1,8 @@
+{% load static %}
+
+{% if user.is_authenticated and user == car.owner %}
+  <div class="card-footer d-flex justify-content-end w-100" style="z-index: 999">
+    <a href="{% url "car:update" pk=car.id %}" role="button" class="btn btn-primary tx-primary me-2">Редактировать</a>
+    <a href="{% url "car:delete" pk=car.id %}" role="button" class="btn btn-danger">Удалить</a>
+  </div>
+{% endif %}

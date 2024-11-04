@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+
+  {% for car in cars %}
+    <a href="/car/{{ car.id }}">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ car.make }} {{ car.model }}</h5>
+          <p class="card-text">{{ car.description }}</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+        {% include "includes/delete_update_btn.html" %}
+      </div>
+    </a>
+  {% endfor %}
+
+</div>
+{% endblock  %}

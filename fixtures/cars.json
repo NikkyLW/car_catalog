@@ -1,0 +1,42 @@
+[
+    {
+        "model": "cars.car",
+        "pk": 1,
+        "fields": {
+            "make": "Toyota",
+            "model": "Camry",
+            "year": 2021,
+            "description": "Компактный седан с отличной экономией топлива и современными технологиями безопасности."
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 2,
+        "fields": {
+            "make": "Ford",
+            "model": "Mustang",
+            "year": null,
+            "description": "Спортивный автомобиль с мощным двигателем и агрессивным дизайном."
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 3,
+        "fields": {
+            "make": "Honda",
+            "model": "Civic",
+            "year": 2020,
+            "description": "Надежный и экономичный седан, идеален для городской эксплуатации."
+        }
+    },
+    {
+        "model": "cars.car",
+        "pk": 4,
+        "fields": {
+            "make": "BMW",
+            "model": "M5",
+            "year": 2020,
+            "description": "Надежный и мощный, немецкий авто для города"
+        }
+    }
+]
